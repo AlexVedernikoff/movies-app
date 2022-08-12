@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body,
+html {
+  font-family: "Inter";
+  background-color: #e5e5e5 !important;
+  min-width: 460px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1010px;
+  min-height: 100vh;
+  background-color: white;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.ant-pagination {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px !important;
+  padding-top: 25px !important;
+}
+
+.ant-tabs-large > .ant-tabs-nav .ant-tabs-tab {
+  font-size: 22px !important;
+}
+
+.ant-alert-message {
+  display: flex;
+  justify-content: center;
+}
+
+.ant-spin-spinning {
+  display: flex !important;
+  justify-content: center !important;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+
+.ant-alert-info {
+  margin-top: 20px !important;
+  margin-left: 17px !important;
+  margin-right: 17px !important;
+}
