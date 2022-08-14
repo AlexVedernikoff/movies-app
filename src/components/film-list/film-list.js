@@ -50,13 +50,13 @@ export default class FilmList extends Component {
         }
       };
 
-      const rating = ratingList
-        .map((ratingElement) => {
-          if (ratingElement.id === el.id) {
-            return ratingElement.rating;
-          } else return null;
-        })
-        .filter((e) => e);
+      const ratingValue = ratingList.reduce((acc, ratingElement) => {
+        if (ratingElement.id === el.id) {
+          acc += ratingElement.rating;
+          console.log(acc);
+        }
+        return acc;
+      }, 0);
 
       return (
         <li className="filmCard" key={el.id}>
@@ -72,7 +72,7 @@ export default class FilmList extends Component {
             <Rate
               allowHalf
               count={10}
-              defaultValue={rating[0]}
+              defaultValue={ratingValue}
               onChange={
                 onChangeRate
                   ? (value) => {
