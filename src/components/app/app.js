@@ -143,7 +143,8 @@ export default class App extends Component {
     });
     if (!query) {
       this.setState({
-        query: ""
+        query: "",
+        totalPages: 0
       });
       return;
     }
