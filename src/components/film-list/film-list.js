@@ -53,7 +53,6 @@ export default class FilmList extends Component {
       const ratingValue = ratingList.reduce((acc, ratingElement) => {
         if (ratingElement.id === el.id) {
           acc += ratingElement.rating;
-          console.log(acc);
         }
         return acc;
       }, 0);
